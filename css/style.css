@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4e6982;
+}
+
+.header {
+    padding: 20px;
+    margin-right: 230px;
+    background-image: url('../image/13.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/*планируется доработать закомментированный блок */
+
+/* .dialog-block {
+    position: relative;
+    top: 10px;
+    left: 10px;
+} */
+
+/* .dialog {    
+    color: #040404;
+    font-family: 'Harry Potter';
+    font-size: 20px;
+    font-weight: 900;
+}
+
+dialog { 
+    position: absolute;
+    top: 30px;
+    right: 1200px;
+    width: 340px;
+    z-index: 3;
+    display: block; 
+    background: none;
+    border: 0 solid;
+}
+
+dialog:not(:target):not([open]) { display: none; }
+
+.dialog-paragraf {
+    font-family: 'Harry Potter';
+    font-size: 24px;
+    color: #121212;
+}
+
+.close {
+    color: #0a0a0a;
+    font-size: 24px;
+    font-family: 'Harry Potter';
+} */
+
+.menu {
+    padding: 23px;
+    position: fixed;
+    top: 0px;
+    right: 0px; 
+    bottom: 0px;      
+    z-index: 1;
+    width: 240px;
+    background: #4e6982;
+    font-family: 'Harry Potter';
+}
+
+.subtitle_menu {
+    font-size: 36px;
+    animation: color-change 5s infinite;
+}
+
+.content {
+    font-size: 20px; 
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 290px;
+    font-size: 84px;
+    text-align: center;
+    color: black;
+    font-family: 'Harry Potter';
+    animation: color-change 5s infinite;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #fcfbfb;
+}
+
+.soundtrack {
+    padding: 7px;
+    position: absolute;
+    top: 230px;
+    left: 720px;
+    width: 270px;
+    height: 195px;
+}
+
+.audio_name {
+    font-family: 'Harry Potter';
+    font-size: 28px;
+    color: #040404;
+}
+
+.box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: myAnimation 15s infinite;
+}
+
+.harry_potter {
+    width: 80px;
+    height: 80px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    cursor: url('../image/cat_witch.cur'), auto;
+}
+
+th, td {
+    border: 0px solid;
+    padding: 8px;
+    text-align:center;
+    color: rgb(210, 166, 24);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+th {
+    font-family: 'Harry Potter';
+    font-size: 42px;
+    color: black;
+    border-bottom: 3px solid #010a13;
+}
+
+.magic {
+    font-size: 26px;
+}
+
+.data, .name_book {
+    font-family: 'Harry Potter';
+    font-size: 24px;
+    color: #010a13;
+}
+
+th:hover, .data:hover, .name_book:hover {
+    color: rgb(210, 166, 22);
+}
+
+.description_animation {
+    font-family: 'Harry Potter';
+    font-size: 28px;
+    opacity: 0.00;
+    transition: 1s all ease-in-out;
+    -moz-transition: 3s all ease-in-out;
+    -webkit-transition: 5s all ease-in-out;
+}
+
+.description_animation:hover {
+    opacity: 1;
+    animation: color-change_three 15s infinite;
+}
+
+a {
+    text-decoration: none;
+    color: #edeaea;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(243, 192, 24);
+}
+
+ul {
+    text-align: left;
+}
+
+.image {
+    position: absolute;
+    cursor: pointer;
+}
+
+.image_1 {
+    z-index: 2;
+    width: 300px;
+    height: 188px;
+    top: 189px;
+    left: 100px;
+}
+
+.image_2 {
+    width: 277px;
+    height: 191px;
+    top: 209px;
+    left: 420px;
+}
+
+.image_3 {
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    width: 150px;
+    height: 150px; 
+}
+
+/*стили для слайдера */
+
+.slaider {
+    margin-right: 237px;
+    cursor: pointer;
+}
+
+.swiper-slide__preview {
+    width: 100%;
+}
+
+.swiper-slide-next {
+    filter: none;
+}
+
+.swiper-button-prev {
+    width: 220px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.swiper-button-prev::after, .swiper-rtl .wiper-button-prev::after {
+    width: 80%;
+    text-align: start;
+    padding-left: 34px;
+    color: rgb(243, 192, 24);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+}
+
+.swiper-button-next {
+    width: 220px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.swiper-button-next::after, .swiper-rtl .wiper-button-prev::after {
+    width: 100%;
+    text-align: end;
+    padding-right: 34px;
+    color: rgb(243, 192, 24);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+}
+
+/*стили для слайдера-конец*/
+
+.main {
+    padding: 10px;
+    position: relative;
+    margin-right: 230px;
+} 
+
+.subtitle {
+    text-align: center;
+    font-family: 'Harry Potter';
+    font-size: 48px;
+    color: black;
+}
+
+.subtitle:hover {
+    color: rgb(243, 192, 24);   
+}
+
+.books {
+    margin-top: 20px;
+	width: 100%;
+    cursor: url('../image/cursor_cristall.cur'), auto;
+}
+
+.dumbledore {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.book-one {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 50px;
+    color: #fbfcfc;
+    font-size: 18px;
+    width: 80%;
+}
+
+.sorting-hat {
+    transition: 2s;
+}
+
+.sorting-hat:hover {
+    transform: scale(1.2);
+}
+
+.book-description {
+    font-size: 18px;
+    color: #1d1b1b;
+    font-weight: bold;
+}
+
+.read_book {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(254, 250, 54);
+    font-family: 'Harry Potter';
+    font-size: 32px;
+}
+
+.world_dobby {
+    position: absolute;
+    top: 750px;
+    left: 700px;
+    font-family: 'Harry Potter';
+    color: #fbfcfc;
+}
+
+.world_dobby-subtitle {    
+    font-size: 36px;
+}
+
+.subtitle_text {
+    font-size: 32px;
+}
+
+.subtitle_text-two {
+    font-size: 24px;
+}
+
+.notes {
+    padding: 20px;
+    background-image: url('../image/13.jpg');
+    background-size: cover;
+    color: #1d1b1b;
+    font-family: 'Harry Potter';
+    font-size: 26px;
+}
+
+.note-one {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.note {
+    font-family: 'Harry Potter';
+    color: rgb(243, 192, 24);
+    font-size: 32px;
+    animation: color-change 5s infinite;
+}
+
+.note-two:hover {
+    color:rgb(243, 192, 24);
+}
+
+.subtitle-two {
+    position: relative;
+}
+
+.subtitle-map {
+    font-family: 'Harry Potter';
+    font-size: 46px;
+    text-align: center;
+    animation: color-change 10s infinite;
+    cursor: pointer;
+}
+
+.paragraf-map {
+    font-family: 'Harry Potter';
+    font-size: 32px;
+    cursor: pointer;
+    margin-right: 230px;
+}
+
+.map {
+    position: relative;
+    background-image: url('../image/новый-2.jpg');
+    background-size: cover;
+    height: 500px;
+    cursor: url('../image/cursor_cristall.cur'), auto;
+    font-family: 'Harry Potter';
+}
+
+.map_text {
+    position: absolute;
+    font-size: 64px;
+    opacity: 0.00;
+    transition: 1s all ease-in-out;
+    -moz-transition: 3s all ease-in-out;
+    -webkit-transition: 5s all ease-in-out;
+}
+
+.map_text:hover {
+    opacity: 1;
+    animation: color-change_six 8s infinite;
+}
+
+.map_text-one {
+    top: 20px;
+    left: 120px;
+}
+
+.map_text-two {
+    top: 165px;
+    left: 290px;
+}
+
+.map_text-three {
+    top: 90px;
+    left: 500px;
+}
+
+.map_text-four {
+    top: 250px;
+    left: 660px;
+}
+
+.map_text-five{
+    top: 44px;
+    left: 690px;
+}
+
+.map_text-six {
+    top: 289px;
+    left: 810px;
+}
+
+.map_text-seven {
+    top: 28px;
+    left: 890px;
+}
+
+.button {
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    width: 300px;
+    background: #284c6f;
+	color: #fff; 
+    border-radius: 5px;
+    font-family: 'Harry Potter';
+}
+
+.link {
+    text-decoration: none;
+    text-align: center;
+    color: #edeaea;
+    font-size: 32px;
+    animation: color-change_two 5s infinite;
+}
+
+.link:hover {
+    color: rgb(243, 192, 24);
+    text-decoration: none;
+}
+
+@keyframes color-change {
+    0% { color: rgb(0, 0, 0); }
+    30% { color: rgb(107, 80, 11); }
+    60% { color: rgb(210, 166, 22); }
+    80% { color: rgb(107, 80, 11);}
+    100% { color: rgb(0, 0, 0); }
+}
+
+@keyframes color-change_two {
+    0% { color: rgb(246, 245, 245);}
+    30% { color: rgb(107, 80, 11);}
+    60% { color: rgb(210, 166, 22);}
+    80% { color: rgb(107, 80, 11);}
+    100% { color: rgb(242, 241, 241);}
+}
+
+@keyframes color-change_three {
+    0% { color: rgb(246, 245, 245);}
+    30% { color: rgb(210, 166, 22);}
+    50% { color: rgb(107, 80, 11);}
+    70% { color: rgb(1, 1, 1);}
+    80% { color: rgb(107, 80, 11);}
+    90% { color: rgb(210, 166, 22);}
+    100% { color: rgb(246, 245, 245);}
+}
+
+@keyframes color-change_four {
+    0% { color: rgb(246, 245, 245);}
+    30% { color: rgb(183, 180, 173);}
+    50% { color: rgb(93, 91, 87);}
+    70% { color: rgb(1, 1, 1);}
+    80% { color: rgb(118, 116, 110);}
+    90% { color: rgb(219, 217, 209);}
+    100% { color: rgb(246, 245, 245);}
+}
+
+@keyframes color-change_five {
+    0% { color: rgb(237, 216, 146);}
+    30% { color: rgb(196, 160, 75);}
+    50% { color: rgb(104, 84, 42);}
+    70% { color: rgb(75, 64, 15);}
+    80% { color: rgb(105, 85, 25);}
+    90% { color: rgb(123, 109, 52);}
+    100% { color: rgb(240, 220, 140);}
+}
+
+@keyframes color-change_six {
+    0% { color: rgb(99, 86, 41);}
+    30% { color: rgb(83, 62, 14);}
+    50% { color: rgb(50, 37, 7);}
+    70% { color: rgb(68, 59, 17);}
+    80% { color: rgb(105, 85, 25);}
+    90% { color: rgb(123, 109, 52);}
+    100% { color: rgb(113, 100, 47);}
+}
+
+@keyframes myAnimation {
+    0% {
+        top: 10px;
+        left: 10px;
+        transform: translate(0) translateY(0);
+    }
+    5% {
+        top: 20px;
+        left: 10%;
+        transform: translateX(0) translateY(0);
+    }
+    10% {
+        top: 10px;
+        left: 20%;
+        transform: translateX(-100%) translateY(0);
+    }
+    20% {
+        top: 100px;
+        left: 30%;
+        transform: translateX(-100%) translateY(0);
+    }
+
+    30% {
+        top: 10px;
+        left: 40%;
+        transform: translateX(-100%) translateY(0);
+    }
+        40% {
+        top: 50px;
+        left: 50%;
+        transform: translateX(-100%) translateY(0);
+    }
+        50% {
+        top: 10px;
+        left: 60%;
+        transform: translateX(-100%) translateY(0);
+    }
+        60% {
+        top: 100px;
+        left: 70%;
+        transform: translateX(-100%) translateY(0);
+    }
+        70% {
+        top: 40px;
+        left: 80%;
+        transform: translateX(-100%) translateY(0);
+    }
+        80% {
+        top: 10px;
+        left: 10px;
+        transform: translateX(0) translateY(0);
+    }
+}
