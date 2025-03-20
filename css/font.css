@@ -1,4 +1,11 @@
-@font-face {
+/* @font-face {
   font-family: 'Harry Potter';
   src: url('/fonts/HarryPotter.ttf');
+} */
+
+@font-face {
+  font-family: 'Heebo Thin';
+  src: url('../fonts/HarryPotter.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
